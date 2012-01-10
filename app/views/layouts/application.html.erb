@@ -9,8 +9,38 @@
 	 <%= javascript_include_tag "application" %>
 </head>
 <body>
+	<div class="container">
+      <header>
+        <%= image_tag("fobh.png", :alt => "Web app", :class => "round") %>
+        <%= image_tag("headerlogo.png", :alt => "Web app", :class => "round") %>
 
-<%= yield %>
+        <nav class="round">
+          <ul>
+            <li><%= link_to "Home", '#' %></li>
+            <li><%= link_to "Find Us", '#' %></li>
+            <li><%= link_to "Events", '#' %></li>
+            <li><%= link_to "About", '#' %></li>
+            <li><%= link_to "Sign in", '#' %></li>
 
+          </ul>
+        </nav>
+      </header>
+      <section class="round">
+			<%= yield %>	
+      </section>
+		<weth class = "rounf">
+	<a href="http://www.weathercity.com/us/mi/ruby"><img  src="http://images.weathercity.com/banners/f00012070.style-a.png" alt="Ruby, Michigan, United States Weather       Forecast" border="0"></a>
+      </weth>
+		<footer>
+		  <nav class="round">
+		    <ul>
+				<li><%= link_to "Contact", '#' %></li>
+		      <li><a href="http://news.railstutorial.org/">Weather</a></li>
+		      <li><a href="http://www.railstutorial.org/">UTube</a></li>
+		      <li><a href="http://www.railstutorial.org/">Volunteers</a></li>
+	
+		    </ul>
+		  </nav>
+		</footer>
 </body>
 </html>
